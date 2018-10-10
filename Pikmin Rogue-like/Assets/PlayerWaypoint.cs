@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerWaypoint : MonoBehaviour {
+public class PlayerWaypoint : MonoBehaviour 
+{
 
     //In editor, add your wayPoint gameobject to the script
     public GameObject wayPoint;
     //How often your waypoint's position will update to the player's position
-    private float timer = 0.5f;
+    private float timer = .5f;
 
 	// Use this for initialization
 	void Start () 
@@ -26,7 +27,7 @@ public class PlayerWaypoint : MonoBehaviour {
         {
             //Position update
             UpdatePosition();
-            timer = 0.5f;
+            timer = .5f;
         }
 	}
 

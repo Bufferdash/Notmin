@@ -7,7 +7,7 @@ public class NotminMovement : MonoBehaviour
 
     private GameObject wayPoint;
     private Vector3 wayPointPos;
-
+    
     //Notmin Movement speed.
     public float speed;
 
@@ -21,8 +21,11 @@ public class NotminMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        wayPointPos = new Vector3(wayPoint.transform.position.x, wayPoint.transform.position.y, wayPoint.transform.position.z);
-        //Here, Notmin follow waypoint.
-        transform.position = Vector3.MoveTowards(transform.position, wayPointPos, speed * Time.deltaTime);
+        //if (Distance > lookAtDistance)
+        {
+            wayPointPos = new Vector3(wayPoint.transform.position.x, wayPoint.transform.position.y, wayPoint.transform.position.z);
+            //Here, Notmin follow waypoint.
+            transform.position = Vector3.MoveTowards(transform.position, wayPointPos, speed * Time.deltaTime);
+        }
     }
 }
