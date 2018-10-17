@@ -20,9 +20,9 @@ public class NotminMovement : MonoBehaviour
         //character = GameObject.Find("character");
         ProximityOut = 3;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         float Dist = Vector3.Distance(wayPoint.transform.position, transform.position);
         if (Dist >= ProximityOut) //|| character.velocity.magnitude > 0)
