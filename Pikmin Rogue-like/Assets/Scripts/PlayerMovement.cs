@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(transform.up * jumpForce, ForceMode.VelocityChange);    //adds instant velocity change, ignore mass
         }
-
+        //
         //Mouse Rotation
         rotationHor = Input.GetAxis("Mouse X") * rotateSpeed;   //rotationHor tracks the mouse movement along the x axis
         transform.Rotate(0, rotationHor, 0);    //set the player rotation using rotationHor
