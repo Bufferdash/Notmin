@@ -27,15 +27,17 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+        /*
         //MOVEMENT
         var x = Input.GetAxis("Horizontal"); //* Time.deltaTime * speed;
         var z = Input.GetAxis("Vertical"); //* Time.deltaTime * speed;
         Vector3 input = new Vector3(x, 0, z);
         input.Normalize();
         transform.Translate(input * Time.deltaTime * speed);
+        */
         //transform.Translate(x, 0, 0);
         //transform.Translate(0, 0, z);
-        /*
+        ///*
         //Move Forward
         if(Input.GetKey(KeyCode.W))
         {
@@ -55,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             transform.Translate(-Vector3.right * speed * Time.deltaTime);
-        }*/
+        }//*/
     }
 
     //Update is called once per frame
